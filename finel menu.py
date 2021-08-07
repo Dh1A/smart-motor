@@ -1,3 +1,10 @@
+
+#TODO : 
+#Clean Definitions 
+#Separate Temp Reading & Relay Control functions in Files Then Import them
+#Clean Menu
+
+
 import RPi.GPIO as GPIO
 import time
 from signal import signal, SIGTERM, SIGHUP, pause
@@ -17,7 +24,6 @@ GPIO.setup(clk, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(dt, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 GPIO.setup(button1,GPIO.IN,pull_up_down=GPIO.PUD_UP)
 counter = 0
-
 
 
 def safe_exit(signum, frame):
